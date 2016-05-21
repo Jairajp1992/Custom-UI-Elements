@@ -16,14 +16,13 @@ customUI.createCustomCheckBoxes = function(options){
 		var product = $(check).first();
 		if(!product.parent().hasClass("custom-ui-checkbox")){
 			product.wrap("<div>");
-			product.parent().attr("id", "custom-ui"+product.val().replace(" ",""));
 			product.parent().addClass("custom-ui-checkbox icon-"+options.color+" custom-ui-unchecked");
 		}
 	});
 	
 	$(options.selector).css("width", "0px");
-	
-	$(".custom-ui-checkbox").click(function(){
+	$(".custom-ui-checkbox").unbind("click");
+	$(".custom-ui-checkbox").bind("click", function(){
 		if($(this).hasClass("custom-ui-unchecked")){
 			$(this).removeClass("custom-ui-unchecked");
 			$(this).addClass("custom-ui-checked");
