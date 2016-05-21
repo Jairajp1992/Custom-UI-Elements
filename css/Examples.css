@@ -1,0 +1,18 @@
+.checkBoxesTable{
+	text-align: left;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.checkBoxesTable th, td{
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#results {
+	width:300px;
+}
+
+#results div{
+	float:left;
+}

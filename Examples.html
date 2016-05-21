@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- JS files -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/custom.ui.js"></script>
+<script src="js/Examples.js"></script>
+
+<!-- CSS files -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.ui.css">
+<link rel="stylesheet" type="text/css" href="css/Examples.css">
+
+</head>
+
+<body>
+
+	<div id="customCheckBoxDiv">
+		<div id="checkBoxes">
+			<table class="checkBoxesTable">
+				<tr>
+					<th>Value</th>
+					<th>Check box</th>
+				</tr>
+				<tr>
+					<td>Black</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Black" /></td>
+				</tr>
+				<tr>
+					<td>Green</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Green" /></td>
+				</tr>
+				<tr>
+					<td>Dark Green</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Dark Green" /></td>
+				</tr>
+				<tr>
+					<td>Orange</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Orange" /></td>
+				</tr>
+				<tr>
+					<td>Dark Orange</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Dark Orange" /></td>
+				</tr>
+				<tr>
+					<td>Red</td>
+					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Red" /></td>
+				</tr>
+			</table>
+			<input type="button" value="Click to Create dynamic checkboxes" onclick="createCheckBoxes();"></input>
+			<table class="checkBoxesTable" id="checkBoxesTable2">
+				<tr>
+					<th>Color</th>
+					<th>Check box</th>
+				</tr>
+			</table>
+		</div>
+		<div id="results">
+			<div id="results1">
+			</div>
+			<div id="results2">
+			</div>
+		</div>
+	</div>
+
+	<div id="customCarouselDiv"></div>
+
+</body>
+
+</html>
