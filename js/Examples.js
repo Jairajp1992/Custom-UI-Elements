@@ -3,18 +3,24 @@ $(document).ready(function(){
 			color: "dark-orange",
 			selector: ".customCheckBox",
 			onCheck: onCheck,
-			onUnCheck: onUnCheck,
-			onChange: onChange1
+			onUnCheck: onUnCheck
 	};
 	customUI.createCustomCheckBoxes(options);
+	$(".customCheckBox").on("change",onChange1);
 	
 });
 
 function onCheck(name, value){
-	//alert("checked "+name+" "+value);
+	
 }
 function onUnCheck(name, value){
-	//alert("unchecked "+name+" "+value);
+	$("#customCheckBoxBtn").val("Check All");
+}
+function onCheck1(name, value){
+	//alert("checked "+name+" "+value);
+}
+function onUnCheck1(name, value){
+	$("#customCheckBox1Btn").val("Check All");
 }
 function onChange1(){
 	var str = "<ul>";
@@ -26,6 +32,8 @@ function onChange1(){
 	str += "</ul>";
 	$("#results1").html(str);
 }
+
+
 function onChange2(){
 	var str = "<ul>";
 	var checked = customUI.getChecked(".customCheckBox1");
@@ -50,10 +58,32 @@ function createCheckBoxes(){
 	var options = {
 			color: "red",
 			selector: ".customCheckBox1",
-			onCheck: onCheck,
-			onUnCheck: onUnCheck,
-			onChange: onChange2
+			onCheck: onCheck1,
+			onUnCheck: onUnCheck1
 	};
 	
 	customUI.createCustomCheckBoxes(options);
+	$(".customCheckBox1").on("change",onChange2);
+}
+
+function clickAll1(button){
+	if($(button).val() == "Check All"){
+		customUI.checkAll(".customCheckBox");
+		$(button).val("Uncheck All");
+	}
+	else{
+		customUI.unCheckAll(".customCheckBox");
+		$(button).val("Check All");
+	}
+}
+
+function clickAll2(button){
+	if($(button).val() == "Check All"){
+		customUI.checkAll(".customCheckBox1");
+		$(button).val("Uncheck All");
+	}
+	else{
+		customUI.unCheckAll(".customCheckBox1");
+		$(button).val("Check All");
+	}
 }
