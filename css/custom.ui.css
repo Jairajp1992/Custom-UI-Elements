@@ -8,29 +8,30 @@
 
 .icon-black{
 	background-image: url(../images/ui-icons_black_256x240.png);
-	background-position: -64px -146px;
 }
 .icon-orange{
 	background-image: url(../images/ui-icons_orange_256x240.png);
-	background-position: -64px -146px;
 }
 .icon-dark-orange{
 	background-image: url(../images/ui-icons_darkorange_256x240.png);
-	background-position: -64px -146px;
 }
 .icon-green{
 	background-image: url(../images/ui-icons_green_256x240.png);
-	background-position: -64px -146px;
 }
 .icon-dark-green{
 	background-image: url(../images/ui-icons_darkgreen_256x240.png);
-	background-position: -64px -146px;
 }
 .icon-red{
 	background-image: url(../images/ui-icons_red_256x240.png);
-	background-position: -64px -146px;
 }
 
+.hidden-checkbox{
+  /* Hidden Checkboxes */
+  -ms-transform: scale(0); /* IE */
+  -moz-transform: scale(0); /* FF */
+  -webkit-transform: scale(0); /* Safari and Chrome */
+  -o-transform: scale(0); /* Opera */
+}
 
 .custom-ui-unchecked{
 	background-image: url();

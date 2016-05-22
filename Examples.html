@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-
+<title>Custom UI Examples</title>
 <head>
 
 <!-- JS files -->
 <script src="js-min/jquery-2.2.4.min.js"></script>
 <script src="js-min/jquery-ui.min.js"></script>
-<script src="js-min/custom.ui.min.js"></script>
+<script src="js/custom.ui.js"></script>
 <script src="js/Examples.js"></script>
 
 <!-- CSS files -->
-<link rel="stylesheet" type="text/css" href="css-min/jquery-ui.min.css">
-<link rel="stylesheet" type="text/css" href="css-min/custom.ui.min.css">
+<link rel="stylesheet" type="text/css" href="css-min/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/custom.ui.css">
 <link rel="stylesheet" type="text/css" href="css/Examples.css">
 
 </head>
@@ -20,7 +20,7 @@
 
 	<div id="customCheckBoxDiv">
 		<div id="checkBoxes">
-			<input type="button" id="customCheckBoxBtn" value="Check All" onclick="clickAll1(this);"></input>
+			<input type="button" id="customCheckBoxBtn" value="Check All" onclick="clickAll1(this);" />
 			<table class="checkBoxesTable">
 				<tr>
 					<th>Value</th>
@@ -51,8 +51,8 @@
 					<td><input type="checkbox" class="customCheckBox" name="customCheckbox" value="Red" /></td>
 				</tr>
 			</table>
-			<input type="button" value="Click to Create dynamic checkboxes" onclick="createCheckBoxes();"></input>
-			<input type="button" id="customCheckBox1Btn" value="Check All" onclick="clickAll2(this);"></input>
+			<input type="button" value="Click to Create dynamic checkboxes" onclick="createCheckBoxes();" />
+			<input type="button" id="customCheckBox1Btn" value="Check All" onclick="clickAll2(this);" />
 			<table class="checkBoxesTable" id="checkBoxesTable2">
 				<tr>
 					<th>Color</th>
@@ -68,7 +68,9 @@
 		</div>
 	</div>
 
-	<div id="customCarouselDiv"></div>
+	<div id="customCarouselDiv">
+		
+	</div>
 
 </body>
 
